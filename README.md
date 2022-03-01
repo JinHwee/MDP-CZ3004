@@ -16,7 +16,7 @@ Desktop -
                         |- best.pt (model)
 ```
 
-#### Modification to detect.py line 87
+#### Modification to detect.py of yolov5 for line 87 (inside yolov5 directory)
 
 ```python
 save_dir = increment_path(Path(project) / name, exist_ok=exist_ok)              # original 
