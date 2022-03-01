@@ -6,6 +6,7 @@ This repository consist of 2 types of backend files, written in bash and in pyth
 
 #### Directory set up
 
+```
 Desktop -
         |- MDP-images -
                         |- raw_images (directory to store raw_images)
@@ -13,7 +14,7 @@ Desktop -
                         |- venv (virtual environment)
                         |- yolov5 (git clone git@github.com:ultralytics/yolov5.git)
                         |- best.pt (model)
-
+```
 
 #### Modification to detect.py line 87
 
@@ -61,4 +62,15 @@ rawfiledir = "<add your own directory to Desktop>\\MDP-images\\raw_images\\"
 
 # Also, you need to modify this statement to factor in the RPi IP address
 ip = "<change to your own RPi ip>"
+```
+
+
+### Executing scripts
+
+```
+# To execute bash script
+./automate_file_transfer.sh 1 2 3 4 5           # where 1 2 3 4 5 represent 5 images to be taken from the obstacles
+
+# To execute python script
+python ./python_automated_transfer.py 1 2 3 4 5 # where 1 2 3 4 5 represent 5 images to be taken from the obstacles
 ```
